@@ -1,0 +1,204 @@
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+
+  --font-one: 'Fraunces', serif;
+  --font-two: 'Montserrat', sans-serif;
+
+
+
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-two);
+  background-color: var(--Cream);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+img {
+    max-width: 100%;
+}
+h1 {
+    color: var(--Very-dark-blue);
+    font-family: var(--font-one);
+    font-size: 3rem;
+  
+}
+
+@media (min-width: 768px) { 
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
+
+p {
+    color: var(--Dark-grayish-blue);
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+   
+}
+
+.attribution { 
+    font-size: 11px;
+     text-align: center;
+    
+
+}
+ .attribution a {
+     color: hsl(228, 45%, 44%);
+    
+} 
+
+
+.card_container {
+   
+    background-color: var(--White);
+    width:  34.2rem;
+    height:  63rem;
+    border-radius: 1rem;
+    
+}
+
+@media (min-width: 768px) { 
+    .card_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: var(--White);
+        width: 63rem;
+        height: auto;
+        gap: 2rem;
+        
+       
+    }
+}
+
+.card_image img {
+    border-radius: 1rem 1rem 0 0;
+}
+
+@media (min-width: 768px) { 
+    .card_image img {
+        border-radius: 1rem 0 0 1rem;
+    }
+}
+.image_desktop {
+    display: none;
+}
+@media (min-width: 768px) { 
+    .image_mobile {
+        display: none;
+    }
+    .image_desktop {
+        display: block;
+       
+    }
+    
+}
+
+.card_info {
+    padding: 2rem;
+}
+
+.card_info p {
+ line-height: 2.5rem; 
+ max-width: 29.5rem;
+}
+@media (min-width: 768px) { 
+    .card_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+
+
+.card_description {
+   font-weight: 500;
+   font-size: 1.5rem;
+  text-transform: uppercase;
+   
+}
+
+
+
+.card_price {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem;
+   
+}
+
+.card_newPrice {
+    font-family: var(--font-one);
+    color: var(--Dark-cyan);
+    font-weight: 700;
+    font-size: 3rem;
+    padding: 1rem 0;
+    
+}
+
+.card_oldPrice {
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+
+
+.card_btn  {
+    background-color: var(--Dark-cyan);
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--blanco);
+    cursor: pointer;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+   
+}
+
+.card_btn a {
+    color: var(--White);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.card_btn:hover {
+    background-color:hsl(158, 38%, 27%);;
+}
+
+
+
+
+
+
+
+
+

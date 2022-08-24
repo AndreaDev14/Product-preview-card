@@ -9,7 +9,7 @@
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS custom properties // BEM 
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
